@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import { Home, Onboarding, Profile } from "./pages";
 import { useStateContext } from "./context";
 import SingleRecordDetails from "./pages/records/single-record-details.jsx";
+import ScreeningSchedule from "./pages/ScreeningSchedules.jsx";
 
 const App = () => {
     const {currentUser} = useStateContext();
@@ -38,6 +39,7 @@ const App = () => {
                     <Route path="/onboarding" element={ <Onboarding/>} />
                     <Route path="/medical-records" element={ <MedicalRecord/>} />
                     <Route path="/medical-records/:id" element={ <SingleRecordDetails/>} />
+                    <Route path="/screening-schedules" element={<ScreeningSchedule/>} />
                 </Routes>
             </div>
         </div>
